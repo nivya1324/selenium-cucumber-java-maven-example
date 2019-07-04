@@ -17,11 +17,12 @@ pipeline {
             steps {
                 echo "hello"
             }
-            post {
-                success {
-                    junit 'target/surefire-reports/**/*.xml' 
-                }
+         stage ('Test') {
+            steps {
+                echo "Smoke Test"
+                
+                
             }
         }
     }
-}
+
