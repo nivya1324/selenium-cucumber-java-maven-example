@@ -7,16 +7,15 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
+                
                     echo "hello"
-                    echo "success"
-                '''
+             
             }
         }
 
         stage ('Build') {
             steps {
-                sh 'mvn clean verify' 
+                
             }
             post {
                 success {
