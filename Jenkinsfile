@@ -17,12 +17,11 @@ pipeline {
             steps {
                 echo "hello"
             }
+        }   
          stage ('Test') {
             steps {
                 echo "Smoke Test"
-                
-                
-            }
+             }
         }
     }
     }
