@@ -15,7 +15,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                
+                echo "hello"
             }
             post {
                 success {
